@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/match" >
+
+    <FrameLayout style="@style/match" >
+
+        <LinearLayout
+            style="@style/match"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+
+            <ImageView
+                android:id="@+id/iv_user_photo"
+                style="@style/wrap"
+                android:layout_margin="5dip"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tv_tip_gesture"
+                style="@style/wrap"
+                android:layout_marginTop="15dip"
+                android:gravity="center"
+                android:text="绘制密码" />
+
+            <com.example.timelock.lockview.LockPatternView
+                xmlns:app="http://schemas.android.com/apk/res/com.wgs.jiesuo"
+                android:id="@+id/lpv_lock"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="30dip"
+                android:background="#334455" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</ScrollView>
